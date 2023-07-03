@@ -21,7 +21,7 @@ const DashboardPage: NextPage<Props> = ({ items }) => {
 };
 
 DashboardPage.getLayout = (page: React.ReactNode) => {
-  return <Layout title="Dashboard / Главная">{page}</Layout>;
+  return <Layout title="Dashboard / Home">{page}</Layout>;
 };
 
 export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {

@@ -11,7 +11,7 @@ export const Header: React.FC = () => {
   const selectedMenu = router.pathname;
 
   const onClickLogout = () => {
-    if (window.confirm("Вы действительно хотите выйти?")) {
+    if (window.confirm("Are you sure to log out?")) {
       Api.auth.logout();
       location.href = "/";
     }
@@ -33,8 +33,8 @@ export const Header: React.FC = () => {
             defaultSelectedKeys={[selectedMenu]}
             onSelect={({ key }) => router.push(key)}
             items={[
-              { key: "/dashboard", label: "Главная" },
-              { key: "/dashboard/profile", label: "Профиль" },
+              { key: "/dashboard", label: "Home" },
+              { key: "/dashboard/profile", label: "Profile" },
             ]}
           />
         </div>
@@ -44,11 +44,11 @@ export const Header: React.FC = () => {
             trigger="click"
             content={
               <Button onClick={onClickLogout} type="primary" danger>
-                Выйти
+                Log out
               </Button>
             }
           >
-            <Avatar>A</Avatar>
+            <Avatar>K</Avatar>
           </Popover>
         </div>
       </div>

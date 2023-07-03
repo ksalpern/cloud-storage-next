@@ -12,7 +12,7 @@ export const LoginForm: React.FC = () => {
       const { token } = await Api.auth.login(values);
 
       notification.success({
-        message: "Успешно!",
+        message: "Success!",
         description: "Go to the admin panel...",
         duration: 2,
       });

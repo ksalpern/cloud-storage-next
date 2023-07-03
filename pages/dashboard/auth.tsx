@@ -14,7 +14,7 @@ const AuthPage: NextPage = () => {
         <Tabs
           items={[
             {
-              label: "Lodin",
+              label: "Login",
               key: "1",
               children: <LoginForm />,
             },

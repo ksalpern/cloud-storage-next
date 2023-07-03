@@ -32,7 +32,7 @@ export const UploadButton: React.FC = () => {
       className={styles.upload}
     >
       <Button type="primary" icon={<CloudUploadOutlined />} size="large">
-        Загрузить файл
+        Upload file
       </Button>
     </Upload>
   );
